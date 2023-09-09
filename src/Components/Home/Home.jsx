@@ -1,39 +1,25 @@
-import React from 'react'
-import './home.css'
-import video from '../../Assets/video.mov'
-import {GrLocation} from 'react-icons/gr'
-import { useEffect } from 'react';
-import {HiFilter} from 'react-icons/hi'
-import {BsFillHouseGearFill} from 'react-icons/bs'
+import React, { useState } from "react";
+import "./home.css";
+import video from "../../Assets/video.mov";
+import { GrLocation } from "react-icons/gr";
+import { useEffect } from "react";
+import { HiFilter } from "react-icons/hi";
+import { BsFillHouseGearFill } from "react-icons/bs";
+
 const Home = () => {
-
-  const handleFetchDataFromJava = async () => {
-    const res = await fetch('http://localhost:8080/WebPhongTroSpringMVC/api/get-product', {
-      mode: 'no-cors'
-    })
-
-    console.log('data receive from java :>', res)
-  }
-
-  useEffect(() => {
-    handleFetchDataFromJava();
-  }, [])
-  return <div>Data for test</div>
   return (
-    <section className='home'>
+    <section className="home">
       <div className="overlay"></div>
-      <video src={video} muted autoPlay loop type='video/mov'></video>
+      <video src={video} muted autoPlay loop type="video/mov"></video>
 
       <div className="homeContent container">
         <div className="textDiv">
-          <span className="smallText">
-            Trọ tốt SV
-          </span>
+          <span className="smallText">Trọ tốt SV</span>
           <h1 className="homeTitle">
             Cho Thuê Phòng Trọ, Cần Tìm Nhà Trọ TPHCM Giá Rẻ 2023
           </h1>
         </div>
-      
+
         <div className="cardDiv grid">
           <div className="locationInput">
             <label htmlFor="">Chọn quận:</label>
@@ -52,17 +38,21 @@ const Home = () => {
                 <option value="quan11">Quận 11</option>
                 <option value="quan12">Quận 12</option>
               </select>
-              <GrLocation className='icon'/>
+              <GrLocation className="icon" />
             </div>
           </div>
 
           <div className="furnitureInput">
             <label htmlFor="furniture">Tình trạng nội thất:</label>
             <div className="input flex">
-              <input type="radio" id='yes' value="Có" name="furniture"/>
-              <label id='radio' htmlFor='yes'>Có</label>
-              <input type="radio" id='no' value="Không" name="furniture"/>
-              <label id='radio' htmlFor='no'>Không</label>
+              <input type="radio" id="yes" value="Có" name="furniture" />
+              <label id="radio" htmlFor="yes">
+                Có
+              </label>
+              <input type="radio" id="no" value="Không" name="furniture" />
+              <label id="radio" htmlFor="no">
+                Không
+              </label>
             </div>
           </div>
 
@@ -72,24 +62,29 @@ const Home = () => {
               <h3 className="total">10,000,000 VND</h3>
             </div>
             <div className="input flex">
-              <input type="radio" id='1to3' value="low" name="price"/>
-              <label id='radio' htmlFor='1to3'>1m-3m</label>
-              <input type="radio" id='3to6' value="mid" name="price"/>
-              <label id='radio' htmlFor='3to6'>3m-6m</label>
-              <input type="radio" id='6to10' value="high" name="price"/>
-              <label id='radio' htmlFor='6to10'>6m-10m</label>
+              <input type="radio" id="1to3" value="low" name="price" />
+              <label id="radio" htmlFor="1to3">
+                1m-3m
+              </label>
+              <input type="radio" id="3to6" value="mid" name="price" />
+              <label id="radio" htmlFor="3to6">
+                3m-6m
+              </label>
+              <input type="radio" id="6to10" value="high" name="price" />
+              <label id="radio" htmlFor="6to10">
+                6m-10m
+              </label>
             </div>
           </div>
 
           <div className="searchOptions flex">
-            <HiFilter className='icon'/>
+            <HiFilter className="icon" />
             <span>Lọc....</span>
           </div>
-
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
