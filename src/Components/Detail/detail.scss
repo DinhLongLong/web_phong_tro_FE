@@ -1,0 +1,143 @@
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93;%)
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --cardHover: rgb(255, 255, 255);
+}
+
+.main{
+    width: 100%;
+
+    .secTitle{
+        .title{
+            position: relative;
+            width: max-content;
+            color: var(--textColor);
+            margin: 1rem 0;
+            z-index: 2;
+
+            &::after{
+                position: absolute;
+                content: '';
+                background: var(--SecondaryColor);
+                height: 5px;
+                width: 120px;
+                right: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .secContent{
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        
+        a{
+            width: 60%;
+        }
+       
+        .singleDestination{
+            height: 100%;
+            display: grid;
+            row-gap: 10px;
+            border-radius: 10px;
+            align-items: center;
+            background: var(--cardBG);
+            box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+            overflow: hidden;
+            &:hover{
+                background:var(--cardHover);
+                box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+                transition: .3s ease;
+            }
+
+            .imageDiv{
+                height: 500px;
+                width: 100%;
+                overflow: hidden;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    transition: 2s ease;
+                }
+
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            
+            .titleDiv{
+                padding: 1rem;
+                color: var(--SecondaryColor);
+            }
+
+            .cardInfo{
+                padding: 1rem;
+
+                .continent{
+                    gap: .5rem;
+
+                    .icon{
+                        color: var(--textColor);
+                        font-size: 18px;
+                    }
+
+                    .name{
+                        color: var(--textColor);
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+
+                .price{
+                    width: 100%;
+                    justify-content: start;
+                    padding: 1 rem;
+                    margin: 1rem 0;
+                    border-top: 1.5px solid var(--greyText);
+                    border-bottom: 1.5px solid var(--greyText);
+                }
+
+                .isFurniture{
+                    font-size: 13.5px;
+                    color: var(--textColor);
+                    font-weight: 500;
+                }
+
+                .descDetail{
+                    font-size: 13px;
+                    color: var(--textColor);
+                    max-height: max-content;
+                }
+
+                .btn{
+                    margin-top: 1rem;
+                    color: var(--whiteColor);
+                    font-weight: 600;
+                    justify-content: space-between;
+                    gap: .5rem;
+                    border-radius: 1rem;
+
+                    .icon{
+                        align-self: center;
+                        font-size: 18px;                        
+                    }
+                }
+            }
+        }
+    }
+}

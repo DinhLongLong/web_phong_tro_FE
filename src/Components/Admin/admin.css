@@ -1,0 +1,115 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93;%)
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.admin-section .hello {
+  color: var(--SecondaryColor);
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+.admin-section .admin-container {
+  display: flex;
+  gap: 40px;
+}
+.admin-section .admin-container aside {
+  width: 20%;
+}
+.admin-section .admin-container aside .navbar-vertical {
+  padding: 1em;
+  width: 16rem;
+  position: fixed;
+  top: 130px;
+  left: 20px;
+}
+.admin-section .admin-container .admin-content .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.admin-section .admin-container .admin-content .singleDestination:hover {
+  background: var(--cardHover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.admin-section .admin-container .admin-content .singleDestination .imageDiv {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+.admin-section .admin-container .admin-content .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 2s ease;
+}
+.admin-section .admin-container .admin-content .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.admin-section .admin-container .admin-content .singleDestination .titleDiv {
+  padding: 1rem;
+  color: var(--SecondaryColor);
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo {
+  padding: 1rem;
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .continent {
+  gap: 0.5rem;
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .continent .icon {
+  color: var(--textColor);
+  font-size: 18px;
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .continent .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .price {
+  width: 100%;
+  justify-content: start;
+  padding: 1 rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--greyText);
+  border-bottom: 1.5px solid var(--greyText);
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .isFurniture {
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .descDetail {
+  font-size: 13px;
+  color: var(--textColor);
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .btn {
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 1rem;
+}
+.admin-section .admin-container .admin-content .singleDestination .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,84 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.dashboard {
+  display: flex;
+  padding: 2em;
+  gap: 3em;
+  position: relative;
+}
+.dashboard .container {
+  width: 70%;
+}
+.dashboard .container .info {
+  padding: 1em;
+  justify-content: space-between;
+}
+.dashboard .container .info .userInfo .userAvar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--cardBG);
+}
+.dashboard .container .info .userInfo .userAvar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dashboard .container .info .userInfo .userName {
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dashboard .container #form_dangban {
+  box-shadow: 0 3px 5px rgba(140, 140, 141, 0.7);
+  min-width: 100%;
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dashboard .container #form_dangban h3 {
+  color: var(--textColor);
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.dashboard .container #form_dangban .locateDetail {
+  margin-bottom: 50px;
+}
+.dashboard .container #form_dangban .locateDetail label {
+  margin-right: 5px;
+}
+.dashboard .container #form_dangban button {
+  margin-top: 10px;
+  width: 20%;
+}
+.dashboard .card-body {
+  width: 20%;
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 1em;
+}
+.dashboard .card-body li {
+  list-style-type: disc;
+  margin-left: 5px;
+}/*# sourceMappingURL=postSell.css.map */
