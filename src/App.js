@@ -25,6 +25,7 @@ import { createContext, useReducer } from "react";
 
 import { authApi, authEndpoints } from "./services";
 import MyReducer from "./Reducers/MyReducer";
+import Chat from "./Components/Chat/Chat";
 
 export const MyUserContext = createContext();
 
@@ -59,6 +60,7 @@ const App = () => {
             <Route exact path="/detail" element={<Detail />} />
             <Route exact path="/postbuy" element={<PostBuy />} />
             <Route exact path="/admin" element={<Admin />} />
+            <Route exact path="/chat" element={<Chat />} />
           </Routes>
 
           <Footer />

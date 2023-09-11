@@ -1,0 +1,80 @@
+.card {
+  width: 70%;
+  height: auto;
+  background-color: #f9f9f9;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-bottom: 5%;
+}
+
+.container {
+  margin-left: 9.5%;
+}
+
+h5 {
+  margin-top: 2%;
+}
+
+.title > h1 {
+  color: #0d4da1;
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.info-item {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+.info-item p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20%;
+}
+
+.news-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+.news-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news-info {
+  font-size: 1rem;
+  color: #555;
+}
+
+.chatBtn {
+  width: auto;
+  margin-right: 5%;
+}
